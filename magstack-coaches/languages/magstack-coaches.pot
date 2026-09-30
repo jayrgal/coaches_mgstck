@@ -1,0 +1,2200 @@
+# Copyright (C) 2026 Magstack
+# This file is distributed under the GPL-2.0-or-later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Magstack Coaches 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/magstack-coaches\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-09-30T15:48:04+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: magstack-coaches\n"
+
+#. Plugin Name of the plugin
+#: magstack-coaches.php
+#: includes/Admin/Menu.php:23
+#: includes/Admin/Menu.php:24
+#: includes/Admin/Menu.php:100
+msgid "Magstack Coaches"
+msgstr ""
+
+#. Plugin URI of the plugin
+#: magstack-coaches.php
+msgid "https://magstack.com/"
+msgstr ""
+
+#. Description of the plugin
+#: magstack-coaches.php
+msgid "Pickleball coach booking marketplace: coach registration, directory, booking flow, facility map and SEO location pages."
+msgstr ""
+
+#. Author of the plugin
+#: magstack-coaches.php
+msgid "Magstack"
+msgstr ""
+
+#: includes/Activator.php:27
+msgid "Find a Coach"
+msgstr ""
+
+#: includes/Activator.php:28
+msgid "Book a Coach"
+msgstr ""
+
+#: includes/Activator.php:29
+msgid "Become a Coach"
+msgstr ""
+
+#: includes/Activator.php:30
+msgid "Coach Dashboard"
+msgstr ""
+
+#: includes/Activator.php:31
+msgid "Pickleball Courts Map"
+msgstr ""
+
+#: includes/Admin/BookingsPage.php:22
+#: includes/Admin/BookingsPage.php:105
+#: includes/Coach/Dashboard.php:47
+msgid "Bookings"
+msgstr ""
+
+#: includes/Admin/BookingsPage.php:33
+#: includes/Admin/BookingsPage.php:55
+#: includes/Admin/BookingsPage.php:167
+#: includes/Admin/CoachAdmin.php:112
+#: includes/Admin/FacilityAdmin.php:60
+#: includes/Admin/SettingsPage.php:144
+msgid "Not allowed."
+msgstr ""
+
+#: includes/Admin/BookingsPage.php:47
+msgid "Booking updated."
+msgstr ""
+
+#: includes/Admin/BookingsPage.php:60
+#: includes/Admin/BookingsPage.php:133
+#: includes/Booking/Service.php:309
+#: includes/Booking/Service.php:369
+#: includes/Booking/Shortcode.php:165
+#: includes/Rest/CoachController.php:178
+#: includes/Rest/PublicController.php:207
+msgid "Booking not found."
+msgstr ""
+
+#: includes/Admin/BookingsPage.php:85
+msgid "Booking saved."
+msgstr ""
+
+#: includes/Admin/BookingsPage.php:106
+msgid "Export CSV"
+msgstr ""
+
+#: includes/Admin/BookingsPage.php:111
+msgid "All statuses"
+msgstr ""
+
+#: includes/Admin/BookingsPage.php:113
+msgid "Any payment"
+msgstr ""
+
+#: includes/Admin/BookingsPage.php:114
+#: includes/Admin/BookingsPage.php:156
+#: includes/Admin/BookingsTable.php:129
+#: includes/Coach/Coach.php:133
+msgid "Paid"
+msgstr ""
+
+#: includes/Admin/BookingsPage.php:115
+#: includes/Admin/BookingsPage.php:156
+#: includes/Admin/BookingsTable.php:129
+msgid "Unpaid"
+msgstr ""
+
+#: includes/Admin/BookingsPage.php:116
+msgid "All coaches"
+msgstr ""
+
+#: includes/Admin/BookingsPage.php:118
+msgid "From"
+msgstr ""
+
+#: includes/Admin/BookingsPage.php:119
+msgid "To"
+msgstr ""
+
+#: includes/Admin/BookingsPage.php:120
+msgid "Reference, name, email, mobile"
+msgstr ""
+
+#: includes/Admin/BookingsPage.php:121
+msgid "Filter"
+msgstr ""
+
+#: includes/Admin/BookingsPage.php:122
+#: templates/coach-directory.php:19
+msgid "Reset"
+msgstr ""
+
+#. translators: %s: reference
+#: includes/Admin/BookingsPage.php:139
+#: includes/Booking/Ics.php:26
+#, php-format
+msgid "Booking %s"
+msgstr ""
+
+#. translators: %s: reference
+#: includes/Admin/BookingsPage.php:140
+msgid "All bookings"
+msgstr ""
+
+#: includes/Admin/BookingsPage.php:146
+#: includes/Admin/BookingsTable.php:45
+#: includes/Admin/CoachAdmin.php:36
+#: includes/Booking/Shortcode.php:93
+#: includes/Booking/Shortcode.php:162
+#: includes/Notifications/Notifier.php:219
+#: includes/PostTypes.php:21
+msgid "Coach"
+msgstr ""
+
+#: includes/Admin/BookingsPage.php:147
+#: includes/Admin/BookingsTable.php:44
+#: includes/Booking/Shortcode.php:158
+msgid "Session"
+msgstr ""
+
+#: includes/Admin/BookingsPage.php:148
+#: includes/Admin/BookingsTable.php:46
+msgid "Player"
+msgstr ""
+
+#: includes/Admin/BookingsPage.php:149
+msgid "Player notes"
+msgstr ""
+
+#: includes/Admin/BookingsPage.php:150
+msgid "Court mode"
+msgstr ""
+
+#: includes/Admin/BookingsPage.php:151
+msgid "Package"
+msgstr ""
+
+#: includes/Admin/BookingsPage.php:152
+#: includes/Admin/BookingsTable.php:48
+#: includes/Booking/Shortcode.php:136
+#: includes/Notifications/Notifier.php:217
+msgid "Coach fee"
+msgstr ""
+
+#: includes/Admin/BookingsPage.php:153
+#: includes/Admin/BookingsTable.php:49
+#: includes/Admin/FacilityAdmin.php:29
+#: includes/Booking/Shortcode.php:139
+#: includes/Notifications/Notifier.php:224
+#: templates/facility-single.php:14
+#: templates/map.php:13
+msgid "Court fee"
+msgstr ""
+
+#: includes/Admin/BookingsPage.php:153
+#: includes/Admin/FacilityAdmin.php:94
+msgid "Court fee note"
+msgstr ""
+
+#: includes/Admin/BookingsPage.php:154
+#: includes/Admin/BookingsTable.php:50
+#: includes/Booking/Shortcode.php:141
+#: includes/Notifications/Notifier.php:225
+msgid "Total"
+msgstr ""
+
+#: includes/Admin/BookingsPage.php:154
+msgid "(recalculated on save)"
+msgstr ""
+
+#: includes/Admin/BookingsPage.php:155
+#: includes/Admin/BookingsTable.php:51
+#: includes/Admin/CoachAdmin.php:37
+#: includes/Booking/Shortcode.php:150
+msgid "Status"
+msgstr ""
+
+#: includes/Admin/BookingsPage.php:156
+#: includes/Admin/BookingsTable.php:52
+msgid "Payment"
+msgstr ""
+
+#: includes/Admin/BookingsPage.php:157
+msgid "Admin note"
+msgstr ""
+
+#: includes/Admin/BookingsPage.php:159
+msgid "Save booking"
+msgstr ""
+
+#: includes/Admin/BookingsTable.php:43
+#: includes/Booking/Shortcode.php:149
+#: includes/Notifications/Notifier.php:226
+msgid "Reference"
+msgstr ""
+
+#: includes/Admin/BookingsTable.php:47
+#: includes/Booking/Shortcode.php:93
+#: includes/Booking/Shortcode.php:161
+#: includes/Notifications/Notifier.php:222
+msgid "Court"
+msgstr ""
+
+#: includes/Admin/BookingsTable.php:82
+msgid "View / edit"
+msgstr ""
+
+#: includes/Admin/BookingsTable.php:84
+msgid "Confirm"
+msgstr ""
+
+#: includes/Admin/BookingsTable.php:85
+#: includes/Coach/Dashboard.php:55
+msgid "Decline"
+msgstr ""
+
+#: includes/Admin/BookingsTable.php:86
+msgid "Complete"
+msgstr ""
+
+#: includes/Admin/BookingsTable.php:87
+#: includes/Coach/Dashboard.php:57
+msgid "Cancel"
+msgstr ""
+
+#: includes/Admin/BookingsTable.php:92
+#: includes/Coach/Dashboard.php:59
+msgid "Mark unpaid"
+msgstr ""
+
+#: includes/Admin/BookingsTable.php:92
+#: includes/Coach/Dashboard.php:58
+msgid "Mark paid"
+msgstr ""
+
+#: includes/Admin/BookingsTable.php:133
+msgid "No bookings found."
+msgstr ""
+
+#: includes/Admin/CoachAdmin.php:38
+#: includes/Admin/CoachAdmin.php:208
+msgid "Tier"
+msgstr ""
+
+#: includes/Admin/CoachAdmin.php:39
+msgid "Listing fee"
+msgstr ""
+
+#: includes/Admin/CoachAdmin.php:40
+#: includes/Helpers.php:117
+msgid "Verified"
+msgstr ""
+
+#: includes/Admin/CoachAdmin.php:41
+msgid "Founding ends"
+msgstr ""
+
+#: includes/Admin/CoachAdmin.php:42
+#: templates/coach-directory.php:8
+msgid "Location"
+msgstr ""
+
+#: includes/Admin/CoachAdmin.php:43
+#: includes/Booking/Shortcode.php:159
+#: includes/Notifications/Notifier.php:220
+msgid "Date"
+msgstr ""
+
+#: includes/Admin/CoachAdmin.php:56
+#: includes/Admin/CoachAdmin.php:157
+#: includes/Admin/CoachAdmin.php:202
+#: includes/Coach/Dashboard.php:51
+#: includes/Helpers.php:35
+msgid "Pending"
+msgstr ""
+
+#: includes/Admin/CoachAdmin.php:57
+#: includes/Admin/CoachAdmin.php:157
+#: includes/Admin/CoachAdmin.php:202
+msgid "Approved"
+msgstr ""
+
+#: includes/Admin/CoachAdmin.php:58
+#: includes/Admin/CoachAdmin.php:157
+#: includes/Admin/CoachAdmin.php:202
+msgid "Rejected"
+msgstr ""
+
+#. translators: %s: date
+#: includes/Admin/CoachAdmin.php:72
+#, php-format
+msgid "Paid until %s"
+msgstr ""
+
+#: includes/Admin/CoachAdmin.php:77
+msgid "Toggle verified"
+msgstr ""
+
+#: includes/Admin/CoachAdmin.php:97
+msgid "Approve"
+msgstr ""
+
+#: includes/Admin/CoachAdmin.php:100
+msgid "Reject this application and email the coach?"
+msgstr ""
+
+#: includes/Admin/CoachAdmin.php:100
+msgid "Reject"
+msgstr ""
+
+#: includes/Admin/CoachAdmin.php:103
+msgid "Mark fee paid (+1 month)"
+msgstr ""
+
+#: includes/Admin/CoachAdmin.php:119
+msgid "Coach approved and notified."
+msgstr ""
+
+#: includes/Admin/CoachAdmin.php:123
+msgid "Coach rejected and notified."
+msgstr ""
+
+#: includes/Admin/CoachAdmin.php:127
+msgid "Verified badge updated."
+msgstr ""
+
+#: includes/Admin/CoachAdmin.php:131
+msgid "Listing fee marked as paid."
+msgstr ""
+
+#: includes/Admin/CoachAdmin.php:160
+#: includes/Coach/Coach.php:134
+msgid "Fee due"
+msgstr ""
+
+#: includes/Admin/CoachAdmin.php:190
+msgid "Coach details"
+msgstr ""
+
+#: includes/Admin/CoachAdmin.php:191
+msgid "Moderation & listing"
+msgstr ""
+
+#: includes/Admin/CoachAdmin.php:200
+msgid "Application status"
+msgstr ""
+
+#: includes/Admin/CoachAdmin.php:206
+msgid "Changing to Approved/Rejected emails the coach."
+msgstr ""
+
+#: includes/Admin/CoachAdmin.php:207
+msgid "Verified badge"
+msgstr ""
+
+#: includes/Admin/CoachAdmin.php:213
+msgid "Founding period ends"
+msgstr ""
+
+#: includes/Admin/CoachAdmin.php:215
+msgid "Fee paid until"
+msgstr ""
+
+#: includes/Admin/CoachAdmin.php:217
+msgid "Fee status:"
+msgstr ""
+
+#: includes/Admin/CoachAdmin.php:218
+msgid "Rating fields are Phase 2-ready (reviews)."
+msgstr ""
+
+#: includes/Admin/CoachAdmin.php:219
+msgid "Rating avg"
+msgstr ""
+
+#: includes/Admin/CoachAdmin.php:220
+msgid "Count"
+msgstr ""
+
+#: includes/Admin/CoachAdmin.php:234
+msgid "Email (private)"
+msgstr ""
+
+#: includes/Admin/CoachAdmin.php:235
+msgid "Mobile (private)"
+msgstr ""
+
+#: includes/Admin/CoachAdmin.php:236
+#: templates/registration-form.php:52
+msgid "Service area (city)"
+msgstr ""
+
+#: includes/Admin/CoachAdmin.php:237
+#: templates/registration-form.php:26
+msgid "Short bio"
+msgstr ""
+
+#: includes/Admin/CoachAdmin.php:238
+msgid "Coaching types"
+msgstr ""
+
+#: includes/Admin/CoachAdmin.php:239
+msgid "Rate per hour (PHP)"
+msgstr ""
+
+#: includes/Admin/CoachAdmin.php:240
+msgid "Durations (minutes)"
+msgstr ""
+
+#: includes/Admin/CoachAdmin.php:241
+msgid "Years"
+msgstr ""
+
+#. translators: %d: years
+#: includes/Admin/CoachAdmin.php:242
+#: templates/coach-profile.php:26
+#: templates/registration-form.php:35
+msgid "Certifications"
+msgstr ""
+
+#: includes/Admin/CoachAdmin.php:243
+msgid "Partner venues"
+msgstr ""
+
+#: includes/Admin/CoachAdmin.php:244
+msgid "Other venues"
+msgstr ""
+
+#: includes/Admin/CoachAdmin.php:248
+msgid "Booking link"
+msgstr ""
+
+#: includes/Admin/FacilityAdmin.php:25
+#: includes/PostTypes.php:50
+msgid "Facility"
+msgstr ""
+
+#: includes/Admin/FacilityAdmin.php:26
+#: includes/Admin/FacilityAdmin.php:40
+#: includes/Booking/Shortcode.php:114
+#: templates/facility-card.php:11
+#: templates/map.php:10
+msgid "Partner"
+msgstr ""
+
+#: includes/Admin/FacilityAdmin.php:27
+#: includes/Admin/FacilityAdmin.php:81
+msgid "City"
+msgstr ""
+
+#: includes/Admin/FacilityAdmin.php:28
+#: templates/facility-single.php:10
+msgid "Courts"
+msgstr ""
+
+#: includes/Admin/FacilityAdmin.php:30
+msgid "Map"
+msgstr ""
+
+#: includes/Admin/FacilityAdmin.php:40
+msgid "Toggle partner"
+msgstr ""
+
+#: includes/Admin/FacilityAdmin.php:49
+#: includes/Booking/Service.php:236
+#: includes/Booking/Shortcode.php:121
+#: templates/facility-card.php:4
+#: templates/facility-single.php:4
+msgid "Pay at venue"
+msgstr ""
+
+#: includes/Admin/FacilityAdmin.php:52
+msgid "No coordinates"
+msgstr ""
+
+#: includes/Admin/FacilityAdmin.php:65
+msgid "Partner status updated."
+msgstr ""
+
+#: includes/Admin/FacilityAdmin.php:70
+msgid "Facility details"
+msgstr ""
+
+#: includes/Admin/FacilityAdmin.php:79
+#: includes/Booking/Shortcode.php:108
+#: templates/facility-single.php:7
+msgid "Partner facility"
+msgstr ""
+
+#: includes/Admin/FacilityAdmin.php:79
+msgid "Partner (badge on map, ranked first, selectable in booking step 3)"
+msgstr ""
+
+#: includes/Admin/FacilityAdmin.php:80
+#: templates/facility-single.php:9
+msgid "Address"
+msgstr ""
+
+#: includes/Admin/FacilityAdmin.php:82
+msgid "Latitude / Longitude"
+msgstr ""
+
+#: includes/Admin/FacilityAdmin.php:83
+msgid "Latitude"
+msgstr ""
+
+#: includes/Admin/FacilityAdmin.php:84
+msgid "Longitude"
+msgstr ""
+
+#: includes/Admin/FacilityAdmin.php:85
+msgid "Tip: right-click a spot on openstreetmap.org → \"Show address\" to read coordinates."
+msgstr ""
+
+#: includes/Admin/FacilityAdmin.php:86
+msgid "Number of courts"
+msgstr ""
+
+#: includes/Admin/FacilityAdmin.php:87
+msgid "Surface type"
+msgstr ""
+
+#: includes/Admin/FacilityAdmin.php:88
+msgid "Opening hours"
+msgstr ""
+
+#: includes/Admin/FacilityAdmin.php:89
+#: templates/facility-single.php:13
+msgid "Contact"
+msgstr ""
+
+#: includes/Admin/FacilityAdmin.php:90
+msgid "Court fee (PHP per session)"
+msgstr ""
+
+#: includes/Admin/FacilityAdmin.php:92
+msgid "Pay at venue (no fixed fee)"
+msgstr ""
+
+#: includes/Admin/FacilityAdmin.php:93
+msgid "Informational in Phase 1: shown as a separate line item; not collected by the plugin."
+msgstr ""
+
+#: includes/Admin/FacilityAdmin.php:95
+msgid "Magstack link (optional)"
+msgstr ""
+
+#: includes/Admin/FacilityAdmin.php:95
+msgid "Phase 3: enables the \"live availability\" flag for partner courts."
+msgstr ""
+
+#: includes/Admin/Menu.php:31
+msgid "Overview"
+msgstr ""
+
+#: includes/Admin/Menu.php:104
+msgid "Coach applications"
+msgstr ""
+
+#: includes/Admin/Menu.php:105
+msgid "Listing fees due"
+msgstr ""
+
+#: includes/Admin/Menu.php:106
+msgid "Pending bookings"
+msgstr ""
+
+#: includes/Admin/Menu.php:107
+msgid "Upcoming confirmed"
+msgstr ""
+
+#: includes/Admin/Menu.php:118
+msgid "Add coach"
+msgstr ""
+
+#: includes/Admin/Menu.php:119
+msgid "Add facility"
+msgstr ""
+
+#: includes/Admin/Menu.php:120
+#: includes/Admin/SettingsPage.php:40
+msgid "Settings"
+msgstr ""
+
+#. translators: %s: datetime
+#: includes/Admin/Menu.php:126
+#, php-format
+msgid "Reminder cron next runs: %s"
+msgstr ""
+
+#. translators: %s: datetime
+#: includes/Admin/Menu.php:127
+msgid "Reminder cron is not scheduled. Deactivate and re-activate the plugin."
+msgstr ""
+
+#: includes/Admin/SettingsPage.php:148
+msgid "SEO location pages regenerated."
+msgstr ""
+
+#: includes/Admin/SettingsPage.php:180
+msgid "Magstack Coaches – Settings"
+msgstr ""
+
+#: includes/Admin/SettingsPage.php:194
+msgid "Currency code"
+msgstr ""
+
+#: includes/Admin/SettingsPage.php:195
+msgid "Currency symbol"
+msgstr ""
+
+#: includes/Admin/SettingsPage.php:195
+msgid "Default: PHP / ₱"
+msgstr ""
+
+#: includes/Admin/SettingsPage.php:196
+msgid "Brand color"
+msgstr ""
+
+#: includes/Admin/SettingsPage.php:197
+msgid "Admin notification email"
+msgstr ""
+
+#: includes/Admin/SettingsPage.php:197
+msgid "Leave blank to use the site admin email."
+msgstr ""
+
+#: includes/Admin/SettingsPage.php:198
+msgid "Coach directory page"
+msgstr ""
+
+#: includes/Admin/SettingsPage.php:198
+msgid "Booking page"
+msgstr ""
+
+#: includes/Admin/SettingsPage.php:198
+msgid "Coach registration page"
+msgstr ""
+
+#: includes/Admin/SettingsPage.php:198
+msgid "Coach dashboard page"
+msgstr ""
+
+#: includes/Admin/SettingsPage.php:198
+msgid "Facility map page"
+msgstr ""
+
+#: includes/Admin/SettingsPage.php:201
+msgid "— Select —"
+msgstr ""
+
+#: includes/Admin/SettingsPage.php:204
+msgid "Uninstall"
+msgstr ""
+
+#: includes/Admin/SettingsPage.php:204
+msgid "Delete ALL plugin data (tables, coaches, facilities, settings) when the plugin is deleted"
+msgstr ""
+
+#: includes/Admin/SettingsPage.php:208
+msgid "Booking lead time (hours)"
+msgstr ""
+
+#: includes/Admin/SettingsPage.php:208
+msgid "Players cannot book sooner than this before the session."
+msgstr ""
+
+#: includes/Admin/SettingsPage.php:209
+msgid "Max days in advance"
+msgstr ""
+
+#: includes/Admin/SettingsPage.php:210
+msgid "Cancellation window (hours)"
+msgstr ""
+
+#: includes/Admin/SettingsPage.php:210
+msgid "Players can self-cancel until this many hours before the session."
+msgstr ""
+
+#: includes/Admin/SettingsPage.php:211
+msgid "Time slot step (minutes)"
+msgstr ""
+
+#: includes/Admin/SettingsPage.php:212
+msgid "Calendar file"
+msgstr ""
+
+#: includes/Admin/SettingsPage.php:212
+msgid "Attach an .ics calendar file to confirmation emails"
+msgstr ""
+
+#: includes/Admin/SettingsPage.php:217
+msgid "Model"
+msgstr ""
+
+#: includes/Admin/SettingsPage.php:218
+msgid "Flat monthly listing fee (Phase 1, enforced)"
+msgstr ""
+
+#: includes/Admin/SettingsPage.php:218
+msgid "Commission % (Phase 2 – stored, NOT enforced yet)"
+msgstr ""
+
+#: includes/Admin/SettingsPage.php:220
+msgid "Founding Coach free period (days)"
+msgstr ""
+
+#: includes/Admin/SettingsPage.php:220
+msgid "Counted from the approval date. After it ends the coach shows \"Fee due\" until you mark the fee paid."
+msgstr ""
+
+#: includes/Admin/SettingsPage.php:221
+msgid "Hide unpaid coaches"
+msgstr ""
+
+#: includes/Admin/SettingsPage.php:221
+msgid "Automatically hide coaches with \"Fee due\" from the directory and booking"
+msgstr ""
+
+#. translators: %s: tier
+#: includes/Admin/SettingsPage.php:224
+#, php-format
+msgid "%s tier"
+msgstr ""
+
+#. translators: %s: tier
+#: includes/Admin/SettingsPage.php:225
+msgid "Monthly listing fee:"
+msgstr ""
+
+#: includes/Admin/SettingsPage.php:226
+msgid "Commission %:"
+msgstr ""
+
+#: includes/Admin/SettingsPage.php:236
+msgid "Payment gateway"
+msgstr ""
+
+#: includes/Admin/SettingsPage.php:236
+msgid "Additional gateways (PayMongo, WooCommerce) plug in via the <code>magstack_payment_gateways</code> filter."
+msgstr ""
+
+#: includes/Admin/SettingsPage.php:237
+msgid "Payment instructions (GCash / bank)"
+msgstr ""
+
+#: includes/Admin/SettingsPage.php:241
+msgid "GCash / payment QR image"
+msgstr ""
+
+#: includes/Admin/SettingsPage.php:242
+msgid "Choose image"
+msgstr ""
+
+#: includes/Admin/SettingsPage.php:242
+#: includes/Coach/Dashboard.php:70
+msgid "Remove"
+msgstr ""
+
+#: includes/Admin/SettingsPage.php:248
+msgid "Leave a field blank to use the built-in default. Basic HTML is allowed. Placeholders:"
+msgstr ""
+
+#: includes/Admin/SettingsPage.php:248
+msgid "{booking_details} always lists the coach fee and court fee as separate line items. Coach contact details ({coach_contact}) only appear after a booking is Confirmed."
+msgstr ""
+
+#: includes/Admin/SettingsPage.php:253
+msgid "Subject"
+msgstr ""
+
+#: includes/Admin/SettingsPage.php:253
+msgid "Body"
+msgstr ""
+
+#: includes/Admin/SettingsPage.php:259
+msgid "Location pages"
+msgstr ""
+
+#: includes/Admin/SettingsPage.php:259
+msgid "Enable auto-generated \"Pickleball Coaches in {City}\" and \"Pickleball Courts in {City}\" pages"
+msgstr ""
+
+#: includes/Admin/SettingsPage.php:260
+msgid "Extra intro text"
+msgstr ""
+
+#: includes/Admin/SettingsPage.php:260
+msgid "Appended to every location page. Use {city} as a placeholder."
+msgstr ""
+
+#: includes/Admin/SettingsPage.php:262
+msgid "Regenerate pages now"
+msgstr ""
+
+#. translators: 1: coach cities 2: facility cities
+#: includes/Admin/SettingsPage.php:263
+#, php-format
+msgid "Currently %1$d coach city page(s) and %2$d court city page(s)."
+msgstr ""
+
+#: includes/Admin/SettingsPage.php:265
+msgid "Regenerate"
+msgstr ""
+
+#: includes/Admin/SettingsPage.php:265
+msgid "Rebuilds the city list and flushes rewrite rules."
+msgstr ""
+
+#: includes/Admin/SettingsPage.php:269
+msgid "reCAPTCHA v3 site key"
+msgstr ""
+
+#: includes/Admin/SettingsPage.php:269
+msgid "Optional. Honeypot, timing and rate limiting always run."
+msgstr ""
+
+#: includes/Admin/SettingsPage.php:270
+msgid "reCAPTCHA v3 secret key"
+msgstr ""
+
+#: includes/Admin/SettingsPage.php:271
+msgid "Minimum seconds to submit a form"
+msgstr ""
+
+#: includes/Admin/SettingsPage.php:272
+msgid "SMS channel"
+msgstr ""
+
+#: includes/Admin/SettingsPage.php:272
+msgid "Enable (requires a provider hooked into the magstack_channel_sms_send filter)"
+msgstr ""
+
+#: includes/Admin/SettingsPage.php:273
+msgid "Viber channel"
+msgstr ""
+
+#: includes/Admin/SettingsPage.php:273
+msgid "Enable (requires a provider hooked into the magstack_channel_viber_send filter)"
+msgstr ""
+
+#. translators: %s: coach
+#: includes/Booking/Ics.php:25
+#, php-format
+msgid "Pickleball session with %s"
+msgstr ""
+
+#: includes/Booking/Reminders.php:25
+msgid "Every 15 minutes"
+msgstr ""
+
+#. translators: %d: sessions
+#: includes/Booking/Repository.php:141
+#, php-format
+msgid "%d-session package"
+msgstr ""
+
+#: includes/Booking/Service.php:43
+msgid "This coach is not available for booking."
+msgstr ""
+
+#: includes/Booking/Service.php:53
+msgid "Please enter your name, a valid email and a valid mobile number."
+msgstr ""
+
+#: includes/Booking/Service.php:64
+msgid "Please choose a valid date and time."
+msgstr ""
+
+#: includes/Booking/Service.php:91
+msgid "That package code is invalid, expired, or has no sessions left for this coach and email."
+msgstr ""
+
+#: includes/Booking/Service.php:98
+msgid "That package is not available."
+msgstr ""
+
+#: includes/Booking/Service.php:146
+msgid "The system is busy. Please try again in a moment."
+msgstr ""
+
+#: includes/Booking/Service.php:157
+#: includes/Booking/Service.php:176
+msgid "Sorry, that time slot was just taken. Please pick another."
+msgstr ""
+
+#: includes/Booking/Service.php:163
+msgid "That package has no sessions left."
+msgstr ""
+
+#: includes/Booking/Service.php:181
+msgid "Could not save your booking. Please try again."
+msgstr ""
+
+#: includes/Booking/Service.php:241
+msgid "Please choose a partner facility."
+msgstr ""
+
+#: includes/Booking/Service.php:257
+msgid "Please choose one of the coach's venues."
+msgstr ""
+
+#: includes/Booking/Service.php:280
+msgid "Coach will choose the court"
+msgstr ""
+
+#: includes/Booking/Service.php:282
+msgid "Court fee to be advised by the coach"
+msgstr ""
+
+#: includes/Booking/Service.php:313
+msgid "Invalid status."
+msgstr ""
+
+#: includes/Booking/Service.php:319
+msgid "That status change is not allowed."
+msgstr ""
+
+#: includes/Booking/Service.php:330
+msgid "That time slot is already taken by another booking."
+msgstr ""
+
+#: includes/Booking/Service.php:372
+msgid "This booking can no longer be cancelled."
+msgstr ""
+
+#. translators: %d: hours
+#: includes/Booking/Service.php:377
+#, php-format
+msgid "Bookings can only be cancelled at least %d hours before the session. Please contact your coach."
+msgstr ""
+
+#: includes/Booking/Shortcode.php:72
+#: includes/Helpers.php:13
+msgid "Beginner"
+msgstr ""
+
+#: includes/Booking/Shortcode.php:73
+#: includes/Helpers.php:14
+msgid "Intermediate"
+msgstr ""
+
+#: includes/Booking/Shortcode.php:74
+#: includes/Helpers.php:15
+msgid "Advanced"
+msgstr ""
+
+#: includes/Booking/Shortcode.php:92
+#, php-format
+msgid "Step %1$d of %2$d"
+msgstr ""
+
+#: includes/Booking/Shortcode.php:93
+msgid "Date & time"
+msgstr ""
+
+#: includes/Booking/Shortcode.php:93
+#: includes/Booking/Shortcode.php:122
+msgid "Your details"
+msgstr ""
+
+#: includes/Booking/Shortcode.php:94
+msgid "Back"
+msgstr ""
+
+#: includes/Booking/Shortcode.php:95
+msgid "Continue"
+msgstr ""
+
+#: includes/Booking/Shortcode.php:96
+msgid "Choose your coach"
+msgstr ""
+
+#: includes/Booking/Shortcode.php:97
+msgid "Search by name or city"
+msgstr ""
+
+#: includes/Booking/Shortcode.php:98
+msgid "No coaches available right now."
+msgstr ""
+
+#: includes/Booking/Shortcode.php:99
+#: templates/coach-card.php:16
+#: templates/coach-profile.php:14
+msgid "/ hour"
+msgstr ""
+
+#: includes/Booking/Shortcode.php:100
+msgid "Pick a date"
+msgstr ""
+
+#: includes/Booking/Shortcode.php:101
+msgid "Pick a time"
+msgstr ""
+
+#: includes/Booking/Shortcode.php:102
+msgid "Session length"
+msgstr ""
+
+#: includes/Booking/Shortcode.php:103
+msgid "min"
+msgstr ""
+
+#: includes/Booking/Shortcode.php:104
+msgid "No open dates in the next 30 days for this coach."
+msgstr ""
+
+#: includes/Booking/Shortcode.php:105
+msgid "No free times on this date."
+msgstr ""
+
+#: includes/Booking/Shortcode.php:106
+#: templates/booking.php:5
+#: templates/dashboard.php:14
+msgid "Loading…"
+msgstr ""
+
+#: includes/Booking/Shortcode.php:107
+msgid "Where will you play?"
+msgstr ""
+
+#: includes/Booking/Shortcode.php:109
+msgid "Choose from our partner courts."
+msgstr ""
+
+#: includes/Booking/Shortcode.php:110
+msgid "Coach's preferred venue"
+msgstr ""
+
+#: includes/Booking/Shortcode.php:111
+msgid "Play at one of the coach's usual venues."
+msgstr ""
+
+#: includes/Booking/Shortcode.php:112
+msgid "Let the coach pick"
+msgstr ""
+
+#: includes/Booking/Shortcode.php:113
+msgid "The coach will choose a court and tell you."
+msgstr ""
+
+#: includes/Booking/Shortcode.php:115
+msgid "Live court availability coming soon"
+msgstr ""
+
+#: includes/Booking/Shortcode.php:116
+msgid "Show map"
+msgstr ""
+
+#: includes/Booking/Shortcode.php:117
+msgid "Hide map"
+msgstr ""
+
+#: includes/Booking/Shortcode.php:118
+msgid "Choose this court"
+msgstr ""
+
+#: includes/Booking/Shortcode.php:119
+#: templates/facility-card.php:12
+#: templates/map.php:11
+msgid "courts"
+msgstr ""
+
+#: includes/Booking/Shortcode.php:120
+msgid "This coach has not listed venues."
+msgstr ""
+
+#: includes/Booking/Shortcode.php:123
+#: templates/registration-form.php:20
+msgid "Full name"
+msgstr ""
+
+#: includes/Booking/Shortcode.php:124
+#: includes/Notifications/EmailChannel.php:13
+#: templates/registration-form.php:22
+msgid "Email"
+msgstr ""
+
+#: includes/Booking/Shortcode.php:125
+msgid "Mobile number"
+msgstr ""
+
+#: includes/Booking/Shortcode.php:126
+msgid "Your skill level"
+msgstr ""
+
+#: includes/Booking/Shortcode.php:127
+msgid "Notes for the coach (optional)"
+msgstr ""
+
+#: includes/Booking/Shortcode.php:128
+msgid "Single session"
+msgstr ""
+
+#: includes/Booking/Shortcode.php:129
+msgid "sessions"
+msgstr ""
+
+#: includes/Booking/Shortcode.php:130
+msgid "This booking is your first session."
+msgstr ""
+
+#: includes/Booking/Shortcode.php:131
+msgid "I have a package code"
+msgstr ""
+
+#: includes/Booking/Shortcode.php:132
+msgid "Package code"
+msgstr ""
+
+#: includes/Booking/Shortcode.php:133
+msgid "Check code"
+msgstr ""
+
+#: includes/Booking/Shortcode.php:134
+msgid "Code accepted. Sessions left:"
+msgstr ""
+
+#: includes/Booking/Shortcode.php:135
+msgid "Price summary"
+msgstr ""
+
+#: includes/Booking/Shortcode.php:137
+#: includes/Notifications/Notifier.php:217
+msgid "Coach fee (package)"
+msgstr ""
+
+#: includes/Booking/Shortcode.php:138
+#: includes/Notifications/Notifier.php:216
+msgid "Coach fee (prepaid package)"
+msgstr ""
+
+#: includes/Booking/Shortcode.php:140
+msgid "To be advised by coach"
+msgstr ""
+
+#: includes/Booking/Shortcode.php:142
+msgid "Confirm booking"
+msgstr ""
+
+#: includes/Booking/Shortcode.php:143
+msgid "Booking…"
+msgstr ""
+
+#: includes/Booking/Shortcode.php:144
+msgid "Please fill in your name, email and mobile number."
+msgstr ""
+
+#: includes/Booking/Shortcode.php:145
+#: includes/Coach/Dashboard.php:63
+msgid "Something went wrong. Please try again."
+msgstr ""
+
+#: includes/Booking/Shortcode.php:146
+msgid "That slot was just taken. Please pick another time."
+msgstr ""
+
+#: includes/Booking/Shortcode.php:147
+msgid "Booking request sent!"
+msgstr ""
+
+#: includes/Booking/Shortcode.php:148
+msgid "Your coach will confirm shortly. We emailed you the details."
+msgstr ""
+
+#: includes/Booking/Shortcode.php:151
+msgid "How to pay"
+msgstr ""
+
+#: includes/Booking/Shortcode.php:152
+msgid "Manage this booking"
+msgstr ""
+
+#: includes/Booking/Shortcode.php:153
+#: includes/Notifications/Notifier.php:196
+msgid "Coach contact"
+msgstr ""
+
+#: includes/Booking/Shortcode.php:154
+msgid "Coach contact details will be shown here once your booking is confirmed."
+msgstr ""
+
+#: includes/Booking/Shortcode.php:155
+msgid "Cancel booking"
+msgstr ""
+
+#: includes/Booking/Shortcode.php:156
+msgid "Cancel this booking?"
+msgstr ""
+
+#: includes/Booking/Shortcode.php:157
+msgid "Online cancellation is closed for this session. Please contact your coach."
+msgstr ""
+
+#: includes/Booking/Shortcode.php:160
+#: includes/Notifications/Notifier.php:221
+msgid "Time"
+msgstr ""
+
+#: includes/Booking/Shortcode.php:163
+msgid "Book another session"
+msgstr ""
+
+#: includes/Booking/Shortcode.php:164
+msgid "Package sessions left"
+msgstr ""
+
+#: includes/Coach/Coach.php:132
+msgid "Founding (free)"
+msgstr ""
+
+#: includes/Coach/Coach.php:135
+msgid "n/a"
+msgstr ""
+
+#: includes/Coach/Dashboard.php:21
+msgid "Coach login"
+msgstr ""
+
+#: includes/Coach/Dashboard.php:23
+msgid "Not a coach yet? Apply here."
+msgstr ""
+
+#: includes/Coach/Dashboard.php:27
+msgid "No coach profile is linked to your account."
+msgstr ""
+
+#: includes/Coach/Dashboard.php:27
+msgid "Apply to become a coach"
+msgstr ""
+
+#: includes/Coach/Dashboard.php:31
+msgid "Application pending"
+msgstr ""
+
+#: includes/Coach/Dashboard.php:31
+msgid "Your application is being reviewed. We will email you once it is approved."
+msgstr ""
+
+#: includes/Coach/Dashboard.php:34
+msgid "Your application was not approved. Please contact us for details."
+msgstr ""
+
+#: includes/Coach/Dashboard.php:48
+#: templates/coach-profile.php:46
+msgid "Availability"
+msgstr ""
+
+#: includes/Coach/Dashboard.php:49
+msgid "Packages"
+msgstr ""
+
+#: includes/Coach/Dashboard.php:50
+msgid "Profile & link"
+msgstr ""
+
+#: includes/Coach/Dashboard.php:52
+#: includes/Helpers.php:36
+msgid "Confirmed"
+msgstr ""
+
+#: includes/Coach/Dashboard.php:53
+msgid "All"
+msgstr ""
+
+#: includes/Coach/Dashboard.php:54
+msgid "Accept"
+msgstr ""
+
+#: includes/Coach/Dashboard.php:56
+msgid "Mark completed"
+msgstr ""
+
+#: includes/Coach/Dashboard.php:60
+msgid "No bookings here yet."
+msgstr ""
+
+#: includes/Coach/Dashboard.php:61
+msgid "Save"
+msgstr ""
+
+#: includes/Coach/Dashboard.php:62
+msgid "Saved"
+msgstr ""
+
+#: includes/Coach/Dashboard.php:64
+msgid "Add hours"
+msgstr ""
+
+#: includes/Coach/Dashboard.php:65
+msgid "Closed"
+msgstr ""
+
+#: includes/Coach/Dashboard.php:66
+msgid "Closed all day"
+msgstr ""
+
+#: includes/Coach/Dashboard.php:67
+msgid "Weekly hours"
+msgstr ""
+
+#: includes/Coach/Dashboard.php:68
+msgid "Date overrides (days off or special hours)"
+msgstr ""
+
+#: includes/Coach/Dashboard.php:69
+msgid "Add override"
+msgstr ""
+
+#: includes/Coach/Dashboard.php:71
+msgid "Copy link"
+msgstr ""
+
+#: includes/Coach/Dashboard.php:72
+msgid "Copied!"
+msgstr ""
+
+#: includes/Coach/Dashboard.php:73
+msgid "Download QR (PNG)"
+msgstr ""
+
+#: includes/Coach/Dashboard.php:74
+msgid "sessions left"
+msgstr ""
+
+#: includes/Coach/Dashboard.php:75
+msgid "Are you sure?"
+msgstr ""
+
+#: includes/Coach/Registration.php:31
+msgid "Application received!"
+msgstr ""
+
+#: includes/Coach/Registration.php:31
+msgid "Thanks for applying. Our team will review your profile and email you once it is approved. You will then be able to log in to your coach dashboard."
+msgstr ""
+
+#: includes/Coach/Registration.php:53
+msgid "Your session expired. Please reload the page and try again."
+msgstr ""
+
+#: includes/Coach/Registration.php:91
+msgid "Please enter your full name."
+msgstr ""
+
+#: includes/Coach/Registration.php:94
+msgid "Please enter a valid email address."
+msgstr ""
+
+#: includes/Coach/Registration.php:97
+msgid "Please enter a valid mobile number."
+msgstr ""
+
+#: includes/Coach/Registration.php:100
+msgid "Please add a short bio."
+msgstr ""
+
+#: includes/Coach/Registration.php:103
+msgid "Select at least one coaching type."
+msgstr ""
+
+#: includes/Coach/Registration.php:106
+msgid "Please enter your session rate."
+msgstr ""
+
+#: includes/Coach/Registration.php:109
+msgid "Please enter your service area (city)."
+msgstr ""
+
+#: includes/Coach/Registration.php:112
+msgid "Please accept the terms."
+msgstr ""
+
+#: includes/Coach/Registration.php:118
+msgid "You already have a coach application or profile."
+msgstr ""
+
+#: includes/Coach/Registration.php:121
+msgid "An account with this email already exists. Please log in first, then submit this form."
+msgstr ""
+
+#: includes/Coach/Registration.php:128
+msgid "Photo must be a JPG, PNG or WebP image."
+msgstr ""
+
+#: includes/Coach/Registration.php:130
+msgid "Photo must be smaller than 5MB."
+msgstr ""
+
+#: includes/Helpers.php:16
+msgid "Kids"
+msgstr ""
+
+#: includes/Helpers.php:17
+msgid "Group"
+msgstr ""
+
+#: includes/Helpers.php:23
+msgid "Monday"
+msgstr ""
+
+#: includes/Helpers.php:24
+msgid "Tuesday"
+msgstr ""
+
+#: includes/Helpers.php:25
+msgid "Wednesday"
+msgstr ""
+
+#: includes/Helpers.php:26
+msgid "Thursday"
+msgstr ""
+
+#: includes/Helpers.php:27
+msgid "Friday"
+msgstr ""
+
+#: includes/Helpers.php:28
+msgid "Saturday"
+msgstr ""
+
+#: includes/Helpers.php:29
+msgid "Sunday"
+msgstr ""
+
+#: includes/Helpers.php:37
+msgid "Declined"
+msgstr ""
+
+#: includes/Helpers.php:38
+msgid "Completed"
+msgstr ""
+
+#: includes/Helpers.php:39
+msgid "Cancelled"
+msgstr ""
+
+#: includes/Helpers.php:117
+msgid "Verified coach"
+msgstr ""
+
+#: includes/Helpers.php:122
+msgid "New"
+msgstr ""
+
+#. translators: %s: rating
+#: includes/Helpers.php:124
+#, php-format
+msgid "Rated %s out of 5"
+msgstr ""
+
+#: includes/Notifications/Notifier.php:27
+msgid "SMS"
+msgstr ""
+
+#: includes/Notifications/Notifier.php:28
+msgid "Viber"
+msgstr ""
+
+#: includes/Notifications/Notifier.php:48
+msgid "in 24 hours"
+msgstr ""
+
+#: includes/Notifications/Notifier.php:48
+msgid "in 2 hours"
+msgstr ""
+
+#: includes/Notifications/Notifier.php:92
+#: includes/Notifications/Notifier.php:266
+msgid "Admin"
+msgstr ""
+
+#. translators: %s: when
+#: includes/Notifications/Notifier.php:103
+#, php-format
+msgid "Reminder – starts %s"
+msgstr ""
+
+#: includes/Notifications/Notifier.php:211
+msgid "Pay at venue / as advised"
+msgstr ""
+
+#. translators: %s: date
+#: includes/Notifications/Notifier.php:261
+#, php-format
+msgid "As a Founding Coach your listing is free until %s."
+msgstr ""
+
+#: includes/Notifications/Templates.php:15
+msgid "Player: booking received (Pending)"
+msgstr ""
+
+#: includes/Notifications/Templates.php:16
+msgid "We received your booking {reference}"
+msgstr ""
+
+#: includes/Notifications/Templates.php:20
+msgid "Player: booking Confirmed"
+msgstr ""
+
+#: includes/Notifications/Templates.php:21
+msgid "Confirmed: {coach_name} on {date} at {time}"
+msgstr ""
+
+#: includes/Notifications/Templates.php:25
+msgid "Player: booking Declined"
+msgstr ""
+
+#: includes/Notifications/Templates.php:26
+msgid "Your booking {reference} was declined"
+msgstr ""
+
+#: includes/Notifications/Templates.php:30
+msgid "Player: booking Cancelled"
+msgstr ""
+
+#: includes/Notifications/Templates.php:31
+msgid "Your booking {reference} was cancelled"
+msgstr ""
+
+#: includes/Notifications/Templates.php:35
+msgid "Player: session Completed"
+msgstr ""
+
+#: includes/Notifications/Templates.php:36
+msgid "Thanks for training with {coach_name}"
+msgstr ""
+
+#: includes/Notifications/Templates.php:40
+msgid "Player: session reminder (24h / 2h)"
+msgstr ""
+
+#: includes/Notifications/Templates.php:41
+msgid "Reminder: session with {coach_name} {when}"
+msgstr ""
+
+#: includes/Notifications/Templates.php:45
+msgid "Coach & Admin: booking update"
+msgstr ""
+
+#: includes/Notifications/Templates.php:46
+msgid "[{site_name}] Booking {reference}: {status_label}"
+msgstr ""
+
+#: includes/Notifications/Templates.php:50
+msgid "Admin: new coach application"
+msgstr ""
+
+#: includes/Notifications/Templates.php:51
+msgid "[{site_name}] New coach application: {coach_name}"
+msgstr ""
+
+#: includes/Notifications/Templates.php:55
+msgid "Coach: application approved"
+msgstr ""
+
+#: includes/Notifications/Templates.php:56
+msgid "Welcome to {site_name}, {coach_name}!"
+msgstr ""
+
+#: includes/Notifications/Templates.php:60
+msgid "Coach: application rejected"
+msgstr ""
+
+#: includes/Notifications/Templates.php:61
+msgid "Your coach application at {site_name}"
+msgstr ""
+
+#: includes/Payments/ManualGateway.php:18
+msgid "GCash / QR (manual)"
+msgstr ""
+
+#. translators: 1: amount 2: booking reference
+#: includes/Payments/ManualGateway.php:40
+#, php-format
+msgid "Pay the coach fee of %1$s using reference %2$s"
+msgstr ""
+
+#: includes/Payments/ManualGateway.php:49
+msgid "Payment QR code"
+msgstr ""
+
+#: includes/Payments/ManualGateway.php:52
+msgid "The court fee is separate and paid as noted in your booking summary."
+msgstr ""
+
+#: includes/PostTypes.php:20
+#: includes/PostTypes.php:24
+msgid "Coaches"
+msgstr ""
+
+#: includes/PostTypes.php:22
+msgid "Add New Coach"
+msgstr ""
+
+#: includes/PostTypes.php:23
+msgid "Edit Coach"
+msgstr ""
+
+#: includes/PostTypes.php:25
+msgid "Search Coaches"
+msgstr ""
+
+#: includes/PostTypes.php:26
+msgid "No coaches found."
+msgstr ""
+
+#: includes/PostTypes.php:27
+msgid "Coach photo"
+msgstr ""
+
+#: includes/PostTypes.php:28
+msgid "Set coach photo"
+msgstr ""
+
+#: includes/PostTypes.php:49
+#: includes/PostTypes.php:53
+#: templates/map.php:30
+msgid "Facilities"
+msgstr ""
+
+#: includes/PostTypes.php:51
+msgid "Add New Facility"
+msgstr ""
+
+#: includes/PostTypes.php:52
+msgid "Edit Facility"
+msgstr ""
+
+#: includes/PostTypes.php:54
+msgid "No facilities found."
+msgstr ""
+
+#: includes/PostTypes.php:55
+msgid "Facility photo"
+msgstr ""
+
+#: includes/PostTypes.php:56
+msgid "Set facility photo"
+msgstr ""
+
+#: includes/Rest/CoachController.php:114
+msgid "A package needs at least 2 sessions and a price."
+msgstr ""
+
+#: includes/Rest/CoachController.php:118
+msgid "Could not save the package."
+msgstr ""
+
+#: includes/Rest/CoachController.php:200
+msgid "Unknown action."
+msgstr ""
+
+#: includes/Rest/PublicController.php:60
+#: includes/Rest/PublicController.php:91
+#: includes/Rest/PublicController.php:113
+msgid "Coach not found."
+msgstr ""
+
+#: includes/Rest/PublicController.php:96
+msgid "Invalid date."
+msgstr ""
+
+#: includes/Rest/PublicController.php:246
+msgid "Package code not valid for this coach and email, or no sessions left."
+msgstr ""
+
+#: includes/Roles.php:13
+msgid "Magstack Coach"
+msgstr ""
+
+#: includes/Seo/LocationPages.php:144
+msgid "Pickleball Coaches in the Philippines"
+msgstr ""
+
+#: includes/Seo/LocationPages.php:144
+msgid "Pickleball Courts in the Philippines"
+msgstr ""
+
+#. translators: %d: number of cities
+#: includes/Seo/LocationPages.php:146
+#, php-format
+msgid "Find and book pickleball coaches in %d Philippine cities. Compare rates, skill levels and availability, then reserve online."
+msgstr ""
+
+#. translators: %d: number of cities
+#: includes/Seo/LocationPages.php:147
+#, php-format
+msgid "Browse pickleball courts and partner facilities in %d Philippine cities with hours, surfaces and court fees."
+msgstr ""
+
+#. translators: %d: number of coaches
+#: includes/Seo/LocationPages.php:179
+#, php-format
+msgid "%d coach"
+msgid_plural "%d coaches"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: "3 coaches" 2: city
+#: includes/Seo/LocationPages.php:183
+#, php-format
+msgid "Looking for a pickleball coach in %2$s? Browse %1$s who train players in and around %2$s."
+msgstr ""
+
+#: includes/Seo/LocationPages.php:184
+#, php-format
+msgid "%2$s has %1$s ready to help you improve your pickleball game, from first dinks to tournament play."
+msgstr ""
+
+#: includes/Seo/LocationPages.php:185
+#, php-format
+msgid "Book a pickleball lesson in %2$s with %1$s, all listed with transparent rates and open time slots."
+msgstr ""
+
+#. translators: %s: price range
+#: includes/Seo/LocationPages.php:191
+#, php-format
+msgid "Lesson rates range from %s per hour."
+msgstr ""
+
+#. translators: %s: list of levels
+#: includes/Seo/LocationPages.php:194
+#, php-format
+msgid "Most coaches here focus on %s players."
+msgstr ""
+
+#. translators: %d: verified coaches
+#: includes/Seo/LocationPages.php:197
+#, php-format
+msgid "%d coach is Verified by our team."
+msgid_plural "%d coaches are Verified by our team."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %s: venues
+#: includes/Seo/LocationPages.php:200
+#, php-format
+msgid "Popular partner courts nearby include %s."
+msgstr ""
+
+#. translators: 1: "3 coaches" 2: city 3: rate text
+#: includes/Seo/LocationPages.php:206
+#, php-format
+msgid "Book a pickleball lesson in %2$s: %1$s available. %3$sCompare profiles, check open time slots and reserve online."
+msgstr ""
+
+#: includes/Seo/LocationPages.php:209
+#, php-format
+msgid "Rates from %s/hr. "
+msgstr ""
+
+#. translators: %s: city
+#: includes/Seo/LocationPages.php:212
+#, php-format
+msgid "Pickleball Coaches in %s – Book Lessons Online"
+msgstr ""
+
+#. translators: %s: city
+#: includes/Seo/LocationPages.php:213
+#, php-format
+msgid "Pickleball Coaches in %s"
+msgstr ""
+
+#. translators: %d: number of venues
+#: includes/Seo/LocationPages.php:225
+#, php-format
+msgid "%d venue"
+msgid_plural "%d venues"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: "3 venues" 2: city
+#: includes/Seo/LocationPages.php:228
+#, php-format
+msgid "Find pickleball courts in %2$s: %1$s with opening hours, surfaces and court fees in one place."
+msgstr ""
+
+#. translators: 1: "3 venues" 2: city
+#: includes/Seo/LocationPages.php:229
+#, php-format
+msgid "Where can you play pickleball in %2$s? Explore %1$s, then book a coach to train with."
+msgstr ""
+
+#: includes/Seo/LocationPages.php:230
+#, php-format
+msgid "Compare %1$s for pickleball in %2$s and pair your court time with a coach."
+msgstr ""
+
+#. translators: %d: total courts
+#: includes/Seo/LocationPages.php:236
+#, php-format
+msgid "%d court in total."
+msgid_plural "%d courts in total."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %d: partner count
+#: includes/Seo/LocationPages.php:239
+#, php-format
+msgid "%d partner facility is listed first."
+msgid_plural "%d partner facilities are listed first."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %s: city
+#: includes/Seo/LocationPages.php:242
+#, php-format
+msgid "Pickleball Courts in %s – Hours, Fees & Map"
+msgstr ""
+
+#. translators: %s: city
+#: includes/Seo/LocationPages.php:243
+#, php-format
+msgid "Pickleball Courts in %s"
+msgstr ""
+
+#. translators: 1: "3 venues" 2: city
+#: includes/Seo/LocationPages.php:244
+#, php-format
+msgid "Explore %1$s for pickleball in %2$s with addresses, opening hours, surfaces and court fees. Book a coach at your favorite court."
+msgstr ""
+
+#: includes/Seo/LocationPages.php:306
+msgid "No coaches listed here yet."
+msgstr ""
+
+#: includes/Seo/LocationPages.php:307
+msgid "Browse all coaches"
+msgstr ""
+
+#. translators: %s: city
+#: includes/Seo/LocationPages.php:307
+#, php-format
+msgid "Pickleball courts in %s"
+msgstr ""
+
+#: includes/Seo/LocationPages.php:314
+msgid "See the map"
+msgstr ""
+
+#: includes/Seo/LocationPages.php:314
+#, php-format
+msgid "Pickleball coaches in %s"
+msgstr ""
+
+#: includes/Seo/LocationPages.php:322
+msgid "Coaches in other cities"
+msgstr ""
+
+#: includes/Seo/LocationPages.php:322
+msgid "Courts in other cities"
+msgstr ""
+
+#: includes/Seo/LocationPages.php:434
+msgid "Pickleball Coach"
+msgstr ""
+
+#: includes/Seo/LocationPages.php:443
+msgid "Pickleball coaching session"
+msgstr ""
+
+#: includes/Seo/LocationPages.php:487
+msgid "Pickleball courts"
+msgstr ""
+
+#: includes/Spam.php:13
+msgid "Leave this field empty"
+msgstr ""
+
+#: includes/Spam.php:19
+msgid "Submission rejected. Please try again."
+msgstr ""
+
+#: includes/Spam.php:38
+msgid "Too many attempts. Please wait a few minutes."
+msgstr ""
+
+#: magstack-coaches.php:27
+msgid "Magstack Coaches requires PHP 8.1 or newer."
+msgstr ""
+
+#: templates/booking.php:7
+msgid "Please enable JavaScript to book a coach."
+msgstr ""
+
+#: templates/coach-card.php:17
+#: templates/coach-profile.php:15
+#: templates/coach-profile.php:76
+msgid "Book now"
+msgstr ""
+
+#: templates/coach-card.php:17
+msgid "View profile"
+msgstr ""
+
+#: templates/coach-directory.php:7
+msgid "Filter coaches"
+msgstr ""
+
+#: templates/coach-directory.php:9
+msgid "Any location"
+msgstr ""
+
+#: templates/coach-directory.php:12
+msgid "Skill level"
+msgstr ""
+
+#: templates/coach-directory.php:13
+msgid "Any level"
+msgstr ""
+
+#: templates/coach-directory.php:16
+msgid "Min price"
+msgstr ""
+
+#: templates/coach-directory.php:17
+msgid "Max price"
+msgstr ""
+
+#: templates/coach-directory.php:18
+msgid "Available on"
+msgstr ""
+
+#: templates/coach-directory.php:19
+msgid "Search"
+msgstr ""
+
+#. translators: %d: coach count
+#: templates/coach-directory.php:22
+#, php-format
+msgid "%d coach found"
+msgid_plural "%d coaches found"
+msgstr[0] ""
+msgstr[1] ""
+
+#: templates/coach-directory.php:32
+msgid "No coaches match your filters yet. Try widening your search."
+msgstr ""
+
+#: templates/coach-profile.php:19
+msgid "About"
+msgstr ""
+
+#: templates/coach-profile.php:22
+#: templates/registration-form.php:30
+msgid "Credentials"
+msgstr ""
+
+#: templates/coach-profile.php:25
+msgid "Experience"
+msgstr ""
+
+#. translators: %d: years
+#: templates/coach-profile.php:25
+#, php-format
+msgid "%d year"
+msgid_plural "%d years"
+msgstr[0] ""
+msgstr[1] ""
+
+#: templates/coach-profile.php:27
+msgid "Session lengths"
+msgstr ""
+
+#: templates/coach-profile.php:28
+#: templates/registration-form.php:56
+msgid "Preferred venues"
+msgstr ""
+
+#: templates/coach-profile.php:31
+msgid "Coach contact details are shared once your booking is confirmed."
+msgstr ""
+
+#: templates/coach-profile.php:36
+msgid "Session packages"
+msgstr ""
+
+#. translators: %d: sessions
+#: templates/coach-profile.php:39
+#, php-format
+msgid "%d session"
+msgid_plural "%d sessions"
+msgstr[0] ""
+msgstr[1] ""
+
+#: templates/coach-profile.php:48
+msgid "Next available dates:"
+msgstr ""
+
+#: templates/coach-profile.php:55
+msgid "No open slots in the next 3 weeks. Check back soon."
+msgstr ""
+
+#: templates/coach-profile.php:58
+msgid "Weekly availability"
+msgstr ""
+
+#: templates/coach-profile.php:68
+msgid "Reviews"
+msgstr ""
+
+#: templates/coach-profile.php:72
+msgid "No reviews yet."
+msgstr ""
+
+#: templates/dashboard.php:9
+msgid "Your monthly listing fee is due. Please settle it with the admin to stay visible in the directory."
+msgstr ""
+
+#: templates/dashboard.php:11
+msgid "Founding Coach: your listing is free during the founding period."
+msgstr ""
+
+#: templates/dashboard.php:15
+msgid "Please enable JavaScript to use the dashboard."
+msgstr ""
+
+#: templates/facility-card.php:14
+msgid "Court fee:"
+msgstr ""
+
+#: templates/facility-card.php:15
+#: templates/facility-single.php:17
+#: templates/map.php:14
+msgid "Book a coach here"
+msgstr ""
+
+#: templates/facility-single.php:11
+msgid "Surface"
+msgstr ""
+
+#: templates/facility-single.php:12
+msgid "Hours"
+msgstr ""
+
+#: templates/facility-single.php:16
+msgid "Reserve a court on Magstack"
+msgstr ""
+
+#: templates/map.php:12
+msgid "Court fee: pay at venue"
+msgstr ""
+
+#: templates/map.php:15
+msgid "Finding your location…"
+msgstr ""
+
+#: templates/map.php:16
+msgid "You are here"
+msgstr ""
+
+#: templates/map.php:17
+msgid "Nearest court:"
+msgstr ""
+
+#: templates/map.php:18
+msgid "Could not get your location. Please allow location access."
+msgstr ""
+
+#: templates/map.php:25
+msgid "Near me"
+msgstr ""
+
+#: templates/map.php:29
+msgid "Map of pickleball facilities"
+msgstr ""
+
+#: templates/registration-form.php:19
+msgid "About you"
+msgstr ""
+
+#: templates/registration-form.php:23
+msgid "Mobile (Viber/GCash)"
+msgstr ""
+
+#: templates/registration-form.php:25
+msgid "Photo"
+msgstr ""
+
+#: templates/registration-form.php:32
+msgid "DUPR rating (optional)"
+msgstr ""
+
+#: templates/registration-form.php:33
+msgid "Years of experience"
+msgstr ""
+
+#: templates/registration-form.php:39
+msgid "Coaching"
+msgstr ""
+
+#: templates/registration-form.php:41
+msgid "Coaching type"
+msgstr ""
+
+#. translators: %s: currency
+#: templates/registration-form.php:49
+#, php-format
+msgid "Session rate (%s per hour)"
+msgstr ""
+
+#. translators: %s: currency
+#: templates/registration-form.php:50
+msgid "Session durations (minutes, comma separated)"
+msgstr ""
+
+#: templates/registration-form.php:58
+msgid "Partner facilities"
+msgstr ""
+
+#: templates/registration-form.php:64
+msgid "Other venues (one per line: Name | Address)"
+msgstr ""
+
+#: templates/registration-form.php:68
+msgid "Session packages (optional)"
+msgstr ""
+
+#: templates/registration-form.php:69
+msgid "Offer a bundle, e.g. 5 sessions at a set price."
+msgstr ""
+
+#: templates/registration-form.php:72
+msgid "Name"
+msgstr ""
+
+#: templates/registration-form.php:73
+msgid "Sessions"
+msgstr ""
+
+#: templates/registration-form.php:74
+msgid "Total price"
+msgstr ""
+
+#: templates/registration-form.php:80
+msgid "Social links (optional)"
+msgstr ""
+
+#: templates/registration-form.php:82
+msgid "Website"
+msgstr ""
+
+#: templates/registration-form.php:88
+msgid "I confirm my details are accurate and agree to the site terms."
+msgstr ""
+
+#: templates/registration-form.php:89
+msgid "Submit application"
+msgstr ""

@@ -200,7 +200,7 @@ final class Registration {
 			'venue_facilities' => $fac_ids,
 			'venues'           => self::parse_venues( (string) ( $d['venues'] ?? '' ), $fac_ids ),
 			'socials'          => $socials,
-			'availability'     => Availability::sanitize( array() ),
+			'availability'     => Availability::sanitize( array( 'weekly' => self::weekly_from_form( $d ) ) ),
 		);
 		foreach ( $meta as $k => $v ) {
 			update_post_meta( $post_id, '_mc_' . $k, $v );
@@ -229,6 +229,18 @@ final class Registration {
 		Notifier::coach_event( 'coach_registered', $post_id );
 		do_action( 'magstack_coach_registered', $post_id, $user_id );
 		return $post_id;
+	}
+
+	/** Build weekly hours from the registration form (selected days + one start/end time). */
+	private static function weekly_from_form( array $d ): array {
+		$days  = array_intersect( (array) ( $d['sched_days'] ?? array() ), Helpers::DAYS );
+		$start = (string) ( $d['sched_start'] ?? '09:00' );
+		$end   = (string) ( $d['sched_end'] ?? '17:00' );
+		$out   = array();
+		foreach ( $days as $day ) {
+			$out[ $day ] = array( array( $start, $end ) );
+		}
+		return $out;
 	}
 
 	/**

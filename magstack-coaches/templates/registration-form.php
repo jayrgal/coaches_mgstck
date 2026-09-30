@@ -53,6 +53,21 @@ $sel_fac    = array_map( 'intval', (array) ( $v['venue_facilities'] ?? array() )
 		</fieldset>
 
 		<fieldset class="mc-fieldset">
+			<legend><?php esc_html_e( 'Weekly schedule', 'magstack-coaches' ); ?></legend>
+			<p class="mc-muted"><?php esc_html_e( 'Pick the days you coach and your usual hours. You can fine-tune each day and add days off later in your dashboard.', 'magstack-coaches' ); ?></p>
+			<?php $sel_days = isset( $v['sched_days'] ) ? (array) $v['sched_days'] : array( 'mon', 'tue', 'wed', 'thu', 'fri' ); ?>
+			<div class="mc-chips" role="group" aria-label="<?php esc_attr_e( 'Days available', 'magstack-coaches' ); ?>">
+				<?php foreach ( \Magstack\Coaches\Helpers::day_labels() as $k => $label ) : ?>
+					<label class="mc-chip"><input type="checkbox" name="sched_days[]" value="<?php echo esc_attr( $k ); ?>" <?php checked( in_array( $k, $sel_days, true ) ); ?>><span><?php echo esc_html( mb_substr( $label, 0, 3 ) ); ?></span></label>
+				<?php endforeach; ?>
+			</div>
+			<div class="mc-row">
+				<div class="mc-field"><label for="mc-sched-start"><?php esc_html_e( 'From', 'magstack-coaches' ); ?></label><input id="mc-sched-start" name="sched_start" type="time" value="<?php echo esc_attr( $val( 'sched_start', '09:00' ) ); ?>"></div>
+				<div class="mc-field"><label for="mc-sched-end"><?php esc_html_e( 'To', 'magstack-coaches' ); ?></label><input id="mc-sched-end" name="sched_end" type="time" value="<?php echo esc_attr( $val( 'sched_end', '17:00' ) ); ?>"></div>
+			</div>
+		</fieldset>
+
+		<fieldset class="mc-fieldset">
 			<legend><?php esc_html_e( 'Preferred venues', 'magstack-coaches' ); ?></legend>
 			<?php if ( $facilities ) : ?>
 				<div class="mc-chips" role="group" aria-label="<?php esc_attr_e( 'Partner facilities', 'magstack-coaches' ); ?>">

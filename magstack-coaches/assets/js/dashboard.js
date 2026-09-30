@@ -109,6 +109,10 @@
 	}
 
 	// ---- Availability ----------------------------------------------------------------------
+	function hasHours(av) {
+		var w = av && av.weekly;
+		return !!w && !Array.isArray(w) && Object.keys(w).some(function (d) { return (w[d] || []).length; });
+	}
 	function timeInput(val, label, cb) {
 		return h('input', { type: 'time', value: val, 'aria-label': label, step: 900, onchange: function (e) { cb(e.target.value); } });
 	}
@@ -127,6 +131,17 @@
 		if (!av.weekly || Array.isArray(av.weekly)) { av.weekly = {}; }
 		if (!av.overrides || Array.isArray(av.overrides)) { av.overrides = {}; }
 		panel.appendChild(h('h3', { text: T.weekly }));
+		if (!hasHours(av)) { panel.appendChild(h('p', { class: 'mc-notice', role: 'status', text: T.setSchedule })); }
+		function fill(days, s, e) { Object.keys(cfg.days).forEach(function (d) { av.weekly[d] = days.indexOf(d) !== -1 ? [[s, e]] : []; }); render(); }
+		var presets = h('div', { class: 'mc-chips' });
+		[[T.presetWeekdays, function () { fill(['mon', 'tue', 'wed', 'thu', 'fri'], '09:00', '17:00'); }],
+		 [T.presetEvery, function () { fill(Object.keys(cfg.days), '09:00', '17:00'); }],
+		 [T.presetWeekend, function () { fill(['sat', 'sun'], '08:00', '12:00'); }],
+		 [T.presetCopy, function () { var m = JSON.parse(JSON.stringify(av.weekly.mon || [])); Object.keys(cfg.days).forEach(function (d) { av.weekly[d] = JSON.parse(JSON.stringify(m)); }); render(); }],
+		 [T.presetClear, function () { fill([], '', ''); }]].forEach(function (x) {
+			presets.appendChild(h('button', { type: 'button', class: 'mc-chip mc-chip--btn', onclick: x[1] }, [x[0]]));
+		});
+		panel.appendChild(presets);
 		Object.keys(cfg.days).forEach(function (d) {
 			var list = av.weekly[d] = av.weekly[d] || [];
 			var row = h('div', { class: 'mc-day' }, [h('strong', { class: 'mc-day__name', text: cfg.days[d] })]);
@@ -248,9 +263,13 @@
 		panel.appendChild(f);
 	}
 
+	setTimeout(function () {
+		if (root.textContent.indexOf('Loading') !== -1 && !state.me) { root.textContent = ''; root.appendChild(h('p', { class: 'mc-notice mc-notice--err', text: T.error + ' (' + (cfg.root || '') + ')' })); }
+	}, 8000);
 	Promise.all([api('coach/me'), api('coach/bookings')]).then(function (res) {
 		state.me = res[0]; state.bookings = res[1];
 		if (!state.bookings.some(function (b) { return b.status === 'pending'; })) { state.filter = 'confirmed'; }
+		if (!hasHours(state.me.availability)) { state.tab = 'availability'; } // first-run: ask for the weekly schedule
 		render();
 	}).catch(function (e) { root.textContent = ''; root.appendChild(h('p', { class: 'mc-notice mc-notice--err', text: e.message || T.error })); });
 })();
